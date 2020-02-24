@@ -10,6 +10,6 @@ namespace Kf
         /// </summary>
         /// <param name="type">The type to get the name for.</param>    
         public static string GetFriendlyName(this Type type)
-            => TypeHelper.GetFriendlyTypeName(type);
+            => TypeHelper.GetFriendlyName(type);
     }
 }
