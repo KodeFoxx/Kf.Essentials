@@ -7,7 +7,7 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    steps:      
+    steps:
       - name: Enable git longpaths
         run: git config --global core.longpaths true
       - name: Setup .NET Core SDK (v3.1.102)
