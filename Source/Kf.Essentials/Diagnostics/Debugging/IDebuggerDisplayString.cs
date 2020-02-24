@@ -1,4 +1,4 @@
-﻿namespace Kf.Essentials.Diagnostics
+﻿namespace Kf.Essentials.Diagnostics.Debugging
 {
     /// <summary>
     /// Interface to facilitate implementing the <see cref="DebuggerDisplayAttribute"/>.
