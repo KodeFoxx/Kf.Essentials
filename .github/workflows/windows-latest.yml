@@ -14,8 +14,8 @@ jobs:
         uses: actions/setup-dotnet@v1.4.0
         with:
           dotnet-version: 3.1.102
-      - name: directory listing
-        run: dir
+      - name: Checkout
+        uses: actions/checkout@v2.0.0    
       - name: Build project
         run: dotnet build --configuration Release
       - name: Run tests
