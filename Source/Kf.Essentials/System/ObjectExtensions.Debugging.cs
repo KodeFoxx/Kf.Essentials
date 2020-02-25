@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace Kf
 {
-    public static class ObjectExtensions
+    public static partial class ObjectExtensions
     {
         /// <summary>
         /// Creates a debug string.

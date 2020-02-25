@@ -7,7 +7,7 @@ using System.Reflection;
 
 namespace Kf
 {
-    public static class ObjectExtenions
+    public static partial class ObjectExtensions
     {
         /// <summary>
         /// Returns a <see cref="PropertyInfo"/> object by use of a lambda expression <paramref name="propertySelector"/>.
