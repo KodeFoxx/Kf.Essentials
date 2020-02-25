@@ -53,5 +53,11 @@ namespace Kf
             => @string.IfNullOrWhiteSpaceThen(result => result
                 ? resultWhenNullOrWhiteSpaceValue
                 : @string);
+
+        public static bool IsInteger(this string @string)
+            => Int32.TryParse(@string, out var integer);
+
+        public static bool IsNumeric(this string @string)
+            => Double.TryParse(@string, out var @double);
     }
 }

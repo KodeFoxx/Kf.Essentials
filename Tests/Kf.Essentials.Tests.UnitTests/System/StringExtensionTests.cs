@@ -47,5 +47,35 @@ namespace Kf.Essentials.Tests.UnitTests.System
             => @string
                 .IfNullOrWhiteSpaceThen("isNullOrWhiteSpace", "isNotNullOrWhiteSpace")
                 .Should().Be(expected);
+
+        [Theory]
+        [InlineData(null, false)]
+        [InlineData(" ", false)]
+        [InlineData("", false)]
+        [InlineData("0", true)]
+        [InlineData("-1", true)]
+        [InlineData("1.1", false)]
+        [InlineData("1,1", false)]
+        public void IsInteger_returns_true_when_Int32_else_false(
+            string @string, bool expected
+        )
+            => @string
+                .IsInteger()
+                .Should().Be(expected);
+
+        [Theory]
+        [InlineData(null, false)]
+        [InlineData(" ", false)]
+        [InlineData("", false)]
+        [InlineData("0", true)]
+        [InlineData("-1", true)]
+        [InlineData("1.1", true)]
+        [InlineData("1,1", true)]
+        public void IsNumeric_returns_true_when_Double_else_false(
+            string @string, bool expected
+        )
+            => @string
+                .IsNumeric()
+                .Should().Be(expected);
     }
 }
