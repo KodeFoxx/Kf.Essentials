@@ -15,9 +15,12 @@
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageIcon>kodefoxx-400x400-color-logo.png</PackageIcon>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <PackageReleaseNotes>- v1.1.0
+    <PackageReleaseNotes>- v1.2.0
+-- Added extension method RemoveAllWhiteSpaces to StringExtensions
+
+- v1.1.0
 -- Added extension methods IsNumeric and IsInteger to StringExtensions</PackageReleaseNotes>    
   </PropertyGroup>
 

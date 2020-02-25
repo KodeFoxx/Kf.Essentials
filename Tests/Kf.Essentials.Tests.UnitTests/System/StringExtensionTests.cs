@@ -77,5 +77,20 @@ namespace Kf.Essentials.Tests.UnitTests.System
             => @string
                 .IsNumeric()
                 .Should().Be(expected);
+
+        [Theory]
+        [InlineData(null, "")]
+        [InlineData(" ", "")]
+        [InlineData("", "")]
+        [InlineData("     ", "")]
+        [InlineData("This is a string", "Thisisastring")]
+        [InlineData("This is a string, with punctuation.", "Thisisastring,withpunctuation.")]
+        [InlineData("This   is    a      s tr ing", "Thisisastring")]
+        public void RemoveAllWhiteSpaces_removes_all_occurences_of_WhiteSpace_characters(
+            string @string, string expected
+        )
+            => @string
+                .RemoveAllWhiteSpaces()
+                .Should().Be(expected);
     }
 }
