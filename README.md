@@ -1,5 +1,4 @@
-![CI @ ubuntu-latest](https://github.com/KodeFoxx/Kf.Essentials/actions?query=workflow%3A%22CI+%40+ubuntu-latest%22)
-![Nuget](https://www.nuget.org/packages/Kf.Essentials/)
+![CI @ ubuntu-latest](https://github.com/KodeFoxx/Kf.Essentials/workflows/CI%20@%20ubuntu-latest/badge.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/kodefoxx/kf.essentials)
 
 # Essentials
