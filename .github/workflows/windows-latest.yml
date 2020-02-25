@@ -20,3 +20,5 @@ jobs:
         run: dotnet build --configuration Release
       - name: Run tests
         run: dotnet test --configuration Release --no-build
+      - name: Publish NuGet
+        uses: rohith/publish-nuget@v2.0.0       
