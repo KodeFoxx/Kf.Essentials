@@ -7,7 +7,7 @@
     <ApplicationIcon>kodefoxx-400x400-color-logo.ico</ApplicationIcon>
     <Description>Kf.Essentials are helper classes, structures and extension methods used often in KodeFoxx projects.</Description>
     <Company>KodeFoxx</Company>
-    <Authors>Yves Schalpe (KodeFoxx)</Authors>
+    <Authors>Yves Schelpe (KodeFoxx)</Authors>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/KodeFoxx/Kf.Essentials</PackageProjectUrl>
     <RepositoryUrl>https://github.com/KodeFoxx/Kf.Essentials</RepositoryUrl>
@@ -15,12 +15,11 @@
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageIcon>kodefoxx-400x400-color-logo.png</PackageIcon>
-    <Version>1.3.0</Version>
+    <Version>1.3.1</Version>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <PackageReleaseNotes>- v1.3.0
 -- Added conversion from Action to Func&lt;Unit&gt; up until seven parameters
 -- Added wrapper for the using statement
-
 
 - v1.2.0
 -- Added extension method RemoveAllWhiteSpaces to StringExtensions
