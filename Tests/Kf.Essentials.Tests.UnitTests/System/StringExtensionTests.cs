@@ -26,7 +26,7 @@ namespace Kf.Essentials.Tests.UnitTests.System
         )
             => @string
                 .IfNullOrEmptyThen("isNullOrEmpty", "isNotNullOrEmpty")
-                .Should().Be(expected);
+                .Should().Be(expected);        
 
         [Theory]
         [InlineData(null, "isNullOrWhiteSpace")]
@@ -40,12 +40,32 @@ namespace Kf.Essentials.Tests.UnitTests.System
                 .Should().Be(expected);
 
         [Theory]
+        [InlineData(null, "isNullOrWhiteSpace")]
+        [InlineData("", "isNullOrWhiteSpace")]
+        [InlineData(" ", "isNullOrWhiteSpace")]
+        public void IfNullOrWhiteSpaceThen_override_returns_true_value_when_null_or_whitespace(
+            string @string, string expected
+        )
+            => @string
+                .IfNullOrWhiteSpaceThen("isNullOrWhiteSpace")
+                .Should().Be(expected);
+
+        [Theory]
         [InlineData("This is a full string", "isNotNullOrWhiteSpace")]
         public void IfNullOrWhiteSpaceThen_returns_false_value_when_not_null_or_whitespace(
             string @string, string expected
         )
             => @string
                 .IfNullOrWhiteSpaceThen("isNullOrWhiteSpace", "isNotNullOrWhiteSpace")
+                .Should().Be(expected);
+
+        [Theory]
+        [InlineData("This is a full string", "This is a full string")]
+        public void IfNullOrWhiteSpaceThen_override_returns_false_value_when_not_null_or_whitespace(
+            string @string, string expected
+        )
+            => @string
+                .IfNullOrWhiteSpaceThen("isNotNullOrWhiteSpace")
                 .Should().Be(expected);
 
         [Theory]
