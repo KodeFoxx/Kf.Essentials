@@ -15,10 +15,13 @@
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageIcon>kodefoxx-400x400-color-logo.png</PackageIcon>
-    <Version>1.4.0</Version>
+    <Version>1.4.1</Version>
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
-    <PackageReleaseNotes>- v1.4.0
-Added HasValue&lt;T&gt; and GetValue&lt;T&gt; with defaultValue of T as either T or Func&lt;T&gt; for Option&lt;T&gt;.
+    <PackageReleaseNotes>- v1.4.1
+-- Updated to LanguageExt.Core 3.4.12
+
+- v1.4.0
+-- Added HasValue&lt;T&gt; and GetValue&lt;T&gt; with defaultValue of T as either T or Func&lt;T&gt; for Option&lt;T&gt;.
 
 - v1.3.0
 -- Added conversion from Action to Func&lt;Unit&gt; up until seven parameters
