@@ -17,7 +17,10 @@
     <PackageIcon>kodefoxx-400x400-color-logo.png</PackageIcon>
     <Version>1.4.1</Version>
     <AssemblyVersion>1.4.0.0</AssemblyVersion>
-    <PackageReleaseNotes>- v1.4.1
+    <PackageReleaseNotes>- v1.4.2
+-- Updated to LanguageExt.Core 3.4.15
+
+- v1.4.1
 -- Updated to LanguageExt.Core 3.4.12
 
 - v1.4.0
@@ -31,7 +34,7 @@
 -- Added extension method RemoveAllWhiteSpaces to StringExtensions
 
 - v1.1.0
--- Added extension methods IsNumeric and IsInteger to StringExtensions</PackageReleaseNotes>    
+-- Added extension methods IsNumeric and IsInteger to StringExtensions</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -57,7 +60,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="LanguageExt.Core" Version="3.4.10" />
+    <PackageReference Include="LanguageExt.Core" Version="3.4.15" />
     <PackageReference Include="System.Runtime" Version="4.3.1" />
   </ItemGroup>
 
