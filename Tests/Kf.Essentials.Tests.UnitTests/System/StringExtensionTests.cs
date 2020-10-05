@@ -1,7 +1,4 @@
 ﻿using FluentAssertions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace Kf.Essentials.Tests.UnitTests.System
@@ -26,7 +23,7 @@ namespace Kf.Essentials.Tests.UnitTests.System
         )
             => @string
                 .IfNullOrEmptyThen("isNullOrEmpty", "isNotNullOrEmpty")
-                .Should().Be(expected);        
+                .Should().Be(expected);
 
         [Theory]
         [InlineData(null, "isNullOrWhiteSpace")]

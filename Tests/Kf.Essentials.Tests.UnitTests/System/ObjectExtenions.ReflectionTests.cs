@@ -16,7 +16,7 @@ namespace Kf.Essentials.Tests.UnitTests.System
                 .None(() => null);
 
             sut.Should().NotBeNull();
-            sut.Name.Should().Be(nameof(stringObject.Length));            
+            sut.Name.Should().Be(nameof(stringObject.Length));
         }
 
         [Fact]
@@ -66,6 +66,6 @@ namespace Kf.Essentials.Tests.UnitTests.System
 
             sut.IsNullOrWhiteSpace().Should().BeTrue();
             sut.Should().Be(String.Empty);
-        }        
+        }
     }
 }
