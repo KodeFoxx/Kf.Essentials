@@ -40,7 +40,7 @@ namespace Kf.Essentials.Reflection
             TObject @object,
             Expression<Func<TObject, TResult>> propertySelector
         )
-            => @object.GetPropertyInfo(propertySelector)                
+            => @object.GetPropertyInfo(propertySelector)
                 .Some(p => KeyValuePair.Create(p.Name, p.GetValue(@object)?.ToString()))
                 .None(() => Null.NullStringKeyValuePair);
 

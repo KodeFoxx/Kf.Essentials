@@ -7,7 +7,7 @@ namespace Kf
         /// <summary>
         /// Represents null as a string value.
         /// </summary>
-        public static string NullString 
+        public static string NullString
             => "(*null)";
 
         /// <summary>

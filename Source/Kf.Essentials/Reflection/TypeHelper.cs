@@ -9,7 +9,7 @@ namespace Kf.Essentials.Reflection
         /// <summary>
         /// Gets the name of a <see cref="Type"/> in a human-readible format.
         /// </summary>
-        /// <param name="type">The type to get the name for.</param>        
+        /// <param name="type">The type to get the name for.</param>
         public static string GetFriendlyName(Type type)
         {
             if (type == null)
@@ -37,7 +37,7 @@ namespace Kf.Essentials.Reflection
                     ? String.Empty
                     : ", ";
 
-            string GenerateTypeStringPart(string aggregate, Type enclosedType) 
+            string GenerateTypeStringPart(string aggregate, Type enclosedType)
                 => $"{aggregate}{CommaOrEmptyString(aggregate)}{GetFriendlyName(enclosedType)}";
         }
     }

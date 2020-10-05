@@ -58,10 +58,10 @@ namespace Kf
             => Int32.TryParse(@string, out var integer);
 
         public static bool IsNumeric(this string @string)
-            => Double.TryParse(@string, out var @double);        
+            => Double.TryParse(@string, out var @double);
 
         public static string RemoveAllWhiteSpaces(this string @string)
-            => @string.IsNullOrWhiteSpace() 
+            => @string.IsNullOrWhiteSpace()
                 ? String.Empty
                 : @string.Replace(" ", "");
     }
