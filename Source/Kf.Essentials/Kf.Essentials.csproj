@@ -15,9 +15,12 @@
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageIcon>kodefoxx-400x400-color-logo.png</PackageIcon>
-    <Version>1.4.2</Version>
-    <AssemblyVersion>1.4.2.0</AssemblyVersion>
-    <PackageReleaseNotes>- v1.4.2
+    <Version>1.5.0</Version>
+    <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <PackageReleaseNotes>- v1.5.0
+-- Added IRange&lt;T&gt;, Range&lt;T&gt; and DateTimeRangeExtensions for both DateTime as well as DateTime?
+
+- v1.4.2
 -- Updated to LanguageExt.Core 3.4.15
 
 - v1.4.1
@@ -35,7 +38,7 @@
 
 - v1.1.0
 -- Added extension methods IsNumeric and IsInteger to StringExtensions</PackageReleaseNotes>
-    <FileVersion>1.4.2.0</FileVersion>
+    <FileVersion>1.5.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
