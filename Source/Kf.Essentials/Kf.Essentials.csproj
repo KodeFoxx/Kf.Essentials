@@ -15,9 +15,12 @@
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageIcon>kodefoxx-400x400-color-logo.png</PackageIcon>
-    <Version>1.5.0</Version>
+    <Version>1.5.1</Version>
     <AssemblyVersion>1.5.0.0</AssemblyVersion>
-    <PackageReleaseNotes>- v1.5.0
+    <PackageReleaseNotes>- v1.5.1
+-- Bugfix for OptionExtensions
+
+- v1.5.0
 -- Added IRange&lt;T&gt;, Range&lt;T&gt; and DateTimeRangeExtensions for both DateTime as well as DateTime?
 
 - v1.4.2

@@ -1,4 +1,5 @@
 ﻿using LanguageExt;
+using LanguageExt.UnsafeValueAccess;
 using System;
 
 namespace Kf
@@ -14,8 +15,11 @@ namespace Kf
 
         public static T GetValue<T>(
             this Option<T> option, Func<T> valueIfNoneFunction)
-            => option.Match(
-                Some: value => value,
-                None: valueIfNoneFunction());
+        {
+            if (option.IsSome)
+                return option.ValueUnsafe();
+
+            return valueIfNoneFunction();
+        }
     }
 }
